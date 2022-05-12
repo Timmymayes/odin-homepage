@@ -1,6 +1,221 @@
-html {
-    box-sizing: border-box;
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    font-family:" Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+    height: 100vh;
 }
-*, *::before, *::after {
-    box-sizing: inherit;
+
+.header, .footer {
+    background-color: #1F2937;
+    display: flex;
+    
+}
+
+.header {
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 8px;
+
+}
+
+.sub-header {
+    display: flex;
+    gap: 48px;
+    padding: 64px 0;
+}
+
+.header, .content, .quote, .callout{
+    padding-left: 12vw;
+    padding-right: 12vw;
+
+}
+
+.sub-header h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 0;
+    
+
+}
+.sub-header p {
+    margin-top: 0;
+}
+
+.sub-header p, .menu a {
+    font-size: 18px;
+    color: #E5E7Eb;
+}
+
+.sub-header button {
+    align-self: flex-start;
+}
+
+
+.quote {
+    color: #1F2937;
+    background-color:#E5E7eb;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.content {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.content h2 {
+    font-weight: 800;
+    font-size: 36px;
+    color: #1F2937;
+    
+}
+
+.menu img {
+    max-width: 50px;
+}
+
+.card-block {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 25vw;
+    gap: 20px;
+  
+
+}
+
+.card {
+    flex: 1;
+    padding: 0 12px;
+    max-width: 150px;
+}
+
+.card p {
+    margin-top: 4px;
+}
+
+p.italic {
+    font-style: italic;
+    font-size: 36px;
+
+}
+
+p.attrib {
+    font-weight: bold;
+    font-size: 30px;
+    align-self: flex-end;
+}
+
+.footer {
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 50px;
+}
+
+.sub-header img {
+    max-width: 33vw;
+}
+
+.card img {
+    border-radius: 10px;
+    border: 2px solid blue;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    padding: 5px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+
+    text-decoration: none;
+   
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 22px;
+}
+
+.content, .quote, .callout, .sub-header {
+    flex: 1;
+    display: flex;
+    height: 100vh;        
+
+}
+
+.callout {
+    justify-content: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    
+   
+}
+
+.modal {
+    align-self: center;
+    padding: 24px 36px;
+    background-color: #3882f6;
+    display: flex;
+    gap: 64px;
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 66vw;
+}
+.modal-msg H3 {
+    font-size: 22px;
+    margin-bottom: 0;
+    color: #F9FAF8;
+}
+
+.modal-msg p {
+    font-size: 1em;
+    margin-top: 0;
+    color: #E5E6Eb;
+}
+.modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    background-color: #3882f6;
+    border-radius: 8px;
+    padding: 6px 32px;
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: 800;
+
+}
+
+.modal button {
+    border: 2px solid #F9FAF8;
+}
+
+.sub-header .left {
+    display: flex;
+    flex-direction: column;
+}
+.footer a {
+    color: #e5e6eb;
 }
